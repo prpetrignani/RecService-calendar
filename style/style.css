@@ -1,0 +1,92 @@
+:root {
+    /* Colors used for page elements */
+    --color-primary: white;
+    --color-secondary: white;
+    --color-background: white;
+  
+    /* Color of text on these colors */
+    --color-on-primary: black;
+    --color-on-secondary: black;
+    --color-on-background: black;
+  
+    /* */
+    --button-color: var(--color-secondary);
+    --hover-button-color: green;
+  
+    --color-error-text: red;
+    
+    /* Spacing used for padding and margins */
+    /* To Do: px, %, em, or rem? */
+    --small-spacing: 5px;
+    --medium-spacing: 10px;
+    --large-spacing: 15px;
+  }
+  
+  /* To Do: Setup default appearance of elemenst (h1, body, nav), can override on page-specific css files with more specific selectors*/
+  
+  a:link {
+    
+  }
+  a:hover {
+    
+  }
+  a:active {
+    
+  }
+
+  /*Calendar styles*/
+section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    padding: 10px;
+  }
+
+  table {
+    border: 5px double #b1b1b3;
+    border-radius: 15px;
+    width: 90vw;
+    text-align: center;
+    margin: auto;
+    padding: 10px;
+  }
+
+th {
+    padding: 10px;
+  }
+
+#dayView {
+    display: none;
+}
+
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+tr {
+    border:hidden;
+}
+
+@media (max-width: 600px) {
+    h1 {
+        text-align: center;
+    }
+
+    #weekView {
+        display: none;
+    }
+
+    #dayView {
+        display: flex;
+    }
+
+    .time-day {
+        width: 30%;
+    }
+ 
+    .tasks {
+        width: 70%;
+    }
+}
