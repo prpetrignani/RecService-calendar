@@ -9,7 +9,6 @@
     font-weight: bold;
   }
 
-
 .calendar__box__week, .calendar__box__day {
     max-width: 70vw;
     margin: auto;
@@ -63,6 +62,64 @@
     display: none;
 }
 
+/*pop up styles*/
+#openWindow {
+    margin-top: 20px;
+    background-color: white;
+    border: none;
+    border-radius: 5px;
+    width: 110px;
+    height: 35px;
+}
+
+#openWindow:hover {
+    background-color: rgb(255, 203, 203);
+    font-weight: bold;
+}
+
+.window {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.4);
+    backdrop-filter: blur(5px);
+}
+
+.event__details {
+    background-color: #fefefe;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    border-radius: 5px;
+    width: 30Vw;
+    position: relative;
+}
+
+.close {
+    color: #aaa;
+    position: absolute; /* Posiziona la X in alto a destra */
+    top: 10px;
+    right: 15px;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.subtitle {
+    font-style: italic;
+}
 
 
 @media (max-width: 600px) {
@@ -89,5 +146,9 @@
         grid-column: 2/3;
         grid-row: 5 / 12;
         text-align: center;
+    }
+
+    .event__details {
+        margin-top: 50%;
     }
 }
