@@ -20,222 +20,144 @@
     <h1>
       Employee Calendar
     </h1>
-    
-    <section id="weekView">
-      <table id="week">
-        <captioion id="currentMonth">
-          <h3>
-            Current month
-          </h3>
-        </captioion>
-        <colgroup>
-          <col class="time" span="1">
-        </colgroup>
-        <thead>
-          <tr>
-            <th>
-            </th>
-            <th>
+    <section class="calendar__box">
+      <section class="calendar">
+        <button id="prev__month" class="month__nav">Previous Month</button>
+        <h2 class="current__month__year">Month Year</h2>
+        <button id="next__month" class="month__nav">Next Month</button>
+      </section>
+        <section class="monthly__view">
+          <section class="day__of__week">
+            <div id="zero" class="week__day">
+            </div> 
+            </div>
+            <div id="I" class="week__day">
               Sun
-            </th>
-            <th>
+            </div>
+            <div id="II" class="week__day">
               Mon
-            </th>
-            <th>
-              Tue
-            </th>
-            <th>
-              Wed
-            </th>
-            <th>
+            </div>
+            <div id="III" class="week__day">
               Thu
-            </th>
-            <th>
+            </div>
+            <div id="IV" class="week__day">
+              Wed
+            </div>
+            <div id="V" class="week__day">
+              Thu
+            </div>
+            <div id="VI" class="week__day">
               Fri
-            </th>
-            <th>
+            </div>
+            <div id="VII" class="week__day">
               Sat
-            </th>
-          </tr>
-        </thead>
-          <tr>
-            <th>6:00 AM</th><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
-          </tr>
-          <tr>
-            <th>7:00 AM</th><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
-          </tr>
-          <tr>
-            <th>8:00 AM</th><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
-          </tr>
-          <tr>
-            <th>9:00 AM</th><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
-          </tr>
-          <tr>
-            <th>10:00 AM</th><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
-          </tr>
-          <tr>
-            <th>11:00 AM</th><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
-          </tr>
-          <tr>
-            <th>12:00 AM</th><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
-          </tr>
-          <tr>
-            <th>1:00 PM</th><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
-          </tr>
-          <tr>
-            <th>2:00 PM</th><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
-          </tr>
-          <tr>
-            <th>3:00 PM</th><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
-          </tr>
-          <tr>
-            <th>1:00 PM</th><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
-          </tr>
-          <tr>
-            <th>4:00 PM</th><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
-          </tr>
-          <tr>
-            <th>5:00 PM</th><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
-          </tr>
-          <tr>
-            <th>6:00 PM</th><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
-          </tr>
-          <tr>
-            <th>7:00 PM</th><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
-          </tr>
-          <tr>
-            <th>8:00 PM</th><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
-          </tr>
-          <tr>
-            <th>9:00 PM</th><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
-          </tr>
-          <tr>
-            <th>10:00 PM</th><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
-          </tr>
-      </table>
+            </div>
+          </section>
+          <section class="time__of__day">
+          <div id="time7" class="day__time">
+            7:00
+          </div>
+          <div id="8" class="day__time">
+            8:00
+          </div>
+          <div id="9" class="day__time">
+            9:00
+          </div>
+          <div id="10" class="day__time">
+            10:00
+          </div>
+          <div id="11" class="day__time">
+            11:00
+          </div>
+          <div id="12" class="day__time">
+            12:00
+          </div>
+          <div id="13" class="day__time">
+            13:00
+          </div>
+          <div id="14" class="day__time">
+            14:00
+          </div>
+          <div id="15" class="day__time">
+            15:00
+          </div>
+          <div id="16" class="day__time">
+            16:00
+          </div>
+          <div id="17" class="day__time">
+            17:00
+          </div>
+          <div id="18" class="day__time">
+            18:00
+          </div>
+          <div class="event">
+            <h4>
+              Service
+            </h4>
+            <p>
+              swimming pool
+            </p>
+          </div>
+        </section>
+      </section>
+  </section>
+  <section class="calendar__box">
+    <section class="calendar">
+      <button id="prev__day" class="day__nav">Previous Day</button>
+      <h2 class="current__day__month">day of the week</h2>
+      <button id="next__day" class="day__nav">Next Day</button>
     </section>
-    <section id="dayView">
-      <table id="day">
-        <captioion id="currentDay">
-          <h3>
-            Today
-          </h3>
-        </captioion>
-        <colgroup>
-          <col class="time-day" span="1">
-          <col class="tasks" span="1">
-        </colgroup>
-        <tr>
-          <th>6:00 AM</th><td></td>
-          <th>
-          </th>
-        </tr>
-        <tr>
-          <th>
-            7:00 AM
-          </th>
-          <td>
-          </td>
-        </tr>
-        <tr>
-          <th>
-          8:00 AM
-          </th>
-          <td></td>
-        </tr>
-        <tr>
-          <th>
-          9:00 AM
-          </th>
-          <td></td>
-        </tr>
-        <tr>
-          <th>
-           10:00 AM
-          </th>
-          <td></td>
-        </tr>
-        <tr>
-          <th>
-            11:00 AM
-          </th>
-          <td></td>
-        </tr>
-        <tr>
-          <th>
-            12:00 AM
-          </th>
-          <td></td>
-        </tr>
-        <tr>
-          <th>
-            1:00 PM
-          </th>
-          <td></td>
-        </tr>
-        <tr>
-          <th>
-            2:00 PM
-          </th>
-          <td></td>
-        </tr>
-        <tr>
-          <th>
-            3:00 PM
-          </th>
-          <td></td>
-        </tr>
-        <tr>
-          <th>
-            4:00 PM
-          </th>
-          <td>
-          </td>
-        </tr>
-        <tr>
-          <th>
-            5:00 PM
-          </th>
-          <td></td>
-        </tr>
-        <tr>
-          <th>
-            6:00 PM
-          </th>
-          <td></td>
-        </tr>
-        <tr>
-          <th>
-            7:00 PM
-          </th>
-          <td></td>
-        </tr>
-        <tr>
-          <th>
-            8:00 PM
-          </th>
-          <td></td>
-        </tr>
-        <tr>
-          <th>
-            9:00 PM
-          </th>
-          <td></td>
-        </tr>
-        <tr>
-          <th>
-            10:00 PM
-          </th>
-          <td>
-          </td>
-        </tr>
-      </table>
+      <section class="daily__view">
+        <div id="7" class="day__time">
+          7:00
+        </div>
+        <div id="8" class="day__time">
+          8:00
+        </div>
+        <div id="9" class="day__time">
+          9:00
+        </div>
+        <div id="10" class="day__time">
+          10:00
+        </div>
+        <div id="11" class="day__time">
+          11:00
+        </div>
+        <div id="12" class="day__time">
+          12:00
+        </div>
+        <div id="13" class="day__time">
+          13:00
+        </div>
+        <div id="14" class="day__time">
+          14:00
+        </div>
+        <div id="15" class="day__time">
+          15:00
+        </div>
+        <div id="16" class="day__time">
+          16:00
+        </div>
+        <div id="17" class="day__time">
+          17:00
+        </div>
+        <div id="18" class="day__time">
+          18:00
+        </div>
+        <div class="event">
+          <h4>
+            Service
+          </h4>
+          <p>
+            swimming pool
+          </p>
+        </div>
+      </section>
     </section>
   </main>
   <footer>
     <!-- Add footer items here -->
   </footer>
 
-  
 </body>
 </html>
