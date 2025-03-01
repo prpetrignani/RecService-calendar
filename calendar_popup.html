@@ -7,7 +7,7 @@
     <title>Rec Services Calendar</title>
     <meta name="page where employee can see their shift and bosses can updated employee workload" content="This is the description for the page">
     <link rel="stylesheet" href="style/siteStyle.css" /> <!-- Site style sheet -->
-    <link rel="stylesheet" href="style/style.css" /> <!-- Add page-specific stylesheet(s) -->
+    <link rel="stylesheet" href="style/stylepop.css" /> <!-- Add page-specific stylesheet(s) -->
 
   </head>
 <body>
@@ -154,15 +154,23 @@
             <p>
               swimming pool
             </p>
-          </div>
-          <button id="apriFinestra">Apri Finestra</button>
+            <button id="openWindow">See Details</button>
+            <div id="popup" class="window">
+                <div class="event__details">
+                    <span class="close">&times;</span>
+                    <h4>
+                        Service
+                    </h4>
+                    <p class="subtitle">Swimming Pool</p>
+                    <p>
+                        Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                        Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.
+                    </p>
 
-    <div id="finestraModale" class="modale">
-        <div class="contenuto-modale">
-            <span class="chiudi">&times;</span>
-            <p>Contenuto della finestra modale.</p>
-        </div>
-    </div>
+                </div>
+            </div>
+          </div>
+          
       </section>
   </section>
   <section class="calendar__box__day">
@@ -217,6 +225,22 @@
           <p>
             swimming pool
           </p>
+
+          <button id="openWindowDay">See Details</button>
+            <div id="popupDay" class="window">
+                <div class="event__details">
+                    <span class="closeDay">&times;</span>
+                    <h4>
+                        Service
+                    </h4>
+                    <p class="subtitle">Swimming Pool</p>
+                    <p>
+                        Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                        Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.
+                    </p>
+
+                </div>
+                
         </div>
       </section>
     </section>
@@ -225,6 +249,6 @@
     <!-- Add footer items here -->
   </footer>
 
-  <script src="script.js"></script>
+  <script src="scripts/script.js"></script>
 </body>
 </html>

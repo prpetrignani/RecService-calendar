@@ -1,21 +1,41 @@
-// Ottieni gli elementi
-var finestraModale = document.getElementById("finestraModale");
-var bottoneApri = document.getElementById("apriFinestra");
-var bottoneChiudi = document.getElementsByClassName("chiudi")[0];
+// Get elements
+var popup = document.getElementById("popup");
+var popupDay = document.getElementById("popupDay");
+var opneButton = document.getElementById("openWindow");
+var opneButtonDay = document.getElementById("openWindowDay");
+var closeButton = document.getElementsByClassName("close")[0];
+var closeButtonDay = document.getElementsByClassName("closeDay")[0];
 
-// Quando l'utente clicca sul pulsante, apri la finestra modale
-bottoneApri.onclick = function() {
-  finestraModale.style.display = "block";
+// Open popup at click
+opneButton.onclick = function() {
+  popup.style.display = "block";
 }
 
-// Quando l'utente clicca sulla X, chiudi la finestra modale
-bottoneChiudi.onclick = function() {
-  finestraModale.style.display = "none";
+// Open popup at click for small view
+opneButtonDay.onclick = function() {
+  popupDay.style.display = "block";
 }
 
-// Quando l'utente clicca al di fuori della finestra modale, chiudila
+// Close popup at click on X
+closeButton.onclick = function() {
+  popup.style.display = "none";
+}
+
+// Close popup at click on X for small view
+closeButtonDay.onclick = function() {
+  popupDay.style.display = "none";
+}
+
+// Close popup at click outside the popup
 window.onclick = function(event) {
-  if (event.target == finestraModale) {
-    finestraModale.style.display = "none";
+  if (event.target == popup) {
+    popup.style.display = "none";
+  }
+}
+
+// Close popup at click outside the popup
+window.onclick = function(event) {
+  if (event.target == popupDay) {
+    popupDay.style.display = "none";
   }
 }
