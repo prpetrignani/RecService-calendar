@@ -16,7 +16,76 @@
       </nav>
   </header>
   <main>
-    <!-- Main content of the page -->
+    <form id="userForm">
+      <h3>
+        Profile
+      </h3>
+      <fieldset id="profile">
+        <img src="" id="userPicture">
+        <div class="profileData">
+          <label>First Name
+            <input type="text" id="firstName" name="first__name" required>
+          </label>
+          <label>Last Name
+            <input type="text" id="lastName" name="last__name" required>
+          </label>
+          <label id="preferedFirstName">Prefered Fist Name
+            <input type="text" id="prefered" name="prefered__name" required>
+          </label>
+          <label id="emailAddress">Email Address
+            <input type="email" id="email" name="email" required>
+          </label>
+        </div>
+      </fieldset>
+
+      <h3>
+        Details
+      </h3>
+      <fieldset id="details">
+        <label>Date of Birth
+          <input type="text" id="birthMonth" name="month__of__birth">
+        </label>
+        <label class="birthinfo">
+          <input type="text" id="birthDay" name="day__of__birth">
+        </label>
+        <label class="birthinfo">
+          <input type="text" id="birthYear" name="year__of__birth">
+        </label>
+        <label>Country Code
+          <input type="text" id="countryCode" name="country__code">
+        </label>
+        <label>Timezone
+          <input type="text" id="timeZone" name="time__zone">
+        </label>
+        <label>Phone Number
+          <input type="text" id="phoneNumber" name="phone__number">
+        </label>
+        <label id="detailsAddress">Home Address
+          <input type="text" id="homeAddress" name="home__address">
+        </label>
+      </fieldset>
+
+      <h3>
+        Emergency Contact
+      </h3>
+      <fieldset id="emergencyContact">
+        <label>Emergency Contact
+          <input type="text" name="emergency__name">
+        </label>
+        <label id="relationship">Relationship to You
+          <input type="text" id="relationship" name="relationship__to__user">
+        </label>
+        <label id="emergrncyCountryCode">Country Code
+          <input type="text" id="emergrncyCountryCode" name="emergrncy__country__code">
+        </label>
+        <label>Phone Number
+          <input type="text" id="emergencyPhone" name="emergency__phone__number">
+        </label>
+      </fieldset>
+
+    <button id="restePassword">
+      Reset password
+    </button>
   </main>
   <footer>
     <!-- Add footer items here -->
